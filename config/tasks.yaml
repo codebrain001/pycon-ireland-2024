@@ -1,0 +1,65 @@
+requirement_elicitation_gathering_task:
+  description: >
+    Thoroughly analyze initial inputs {inputs} to identify and extract key project requirements, objectives, and stakeholder needs.
+    Summarize critical insights to establish a comprehensive understanding of the project scope, ensuring all essential aspects are captured for subsequent phases.
+    Document the analysis in a structured format, adhering to industry best practices.
+  expected_output: >
+    A structured document titled 'Initial Requirement Elicitation Summary' containing:
+      1. Key Project Requirements
+        - A comprehensive outline of primary project requirements identified from the initial inputs, categorized by function or importance.
+      2. Project Objectives
+        - Clearly articulated project objectives, outlining the intended goals and expected outcomes.
+      3. Stakeholder Needs and Expectations
+        - An in-depth analysis of stakeholder requirements, expectations, specific concerns, and priorities.
+      4. Additional Context or Insights
+        - Any other relevant information that could impact project scope, such as preliminary constraints or assumptions.
+    This document will serve as a foundational reference for developing more detailed requirements, ensuring clarity and alignment across project stakeholders.
+
+market_research_task:
+  description: >
+    Conduct a comprehensive market, technical, and competitive analysis informed by the 'Initial Requirement Elicitation Summary.' 
+    Gather and critically evaluate relevant industry reports, market data, and competitor information. 
+    Develop customer profiles and assess the project’s positioning, providing actionable insights to support strategic decisions.
+  expected_output: >
+    A document titled 'Comprehensive Market and Technical Analysis' that includes:
+      1. Market Analysis
+      2. Competitor Analysis
+      3. Technological Trends
+      4. Customer Segmentation and Personas
+      5. SWOT Analysis
+    This document should provide robust, data-driven insights to guide the project’s strategic direction.
+
+requirements_development_task:
+  description: >
+    Develop comprehensive functional and non-functional requirements based on insights from the 'Initial Requirement Elicitation Summary' and 'Comprehensive Market and Technical Analysis.' 
+    Ensure these requirements are well-structured, actionable, and prioritized for resource allocation.
+  expected_output: >
+    A 'Draft Business Requirements Document (BRD)' containing:
+      1. Functional Requirements
+      2. Non-Functional Requirements
+      3. Prioritized Requirements with Justifications
+    This document will provide a clear foundation for technical design and resource planning.
+
+compliance_assessment_task:
+  description: >
+    Assess the 'Draft BRD' to ensure compliance with GDPR and other relevant data protection standards. 
+    Perform a Data Protection Impact Assessment (DPIA) and create a compliance framework to guide the project through regulatory requirements.
+  expected_output: >
+    A 'GDPR Compliance Assessment Report' containing:
+      1. Compliance Analysis for the BRD
+      2. DPIA Report outlining potential data privacy risks and mitigation strategies
+      3. Compliance Framework for ongoing adherence
+    This report ensures that data privacy and regulatory standards are integrated into the project.
+
+quality_assurance_task:
+  description: >
+    Conduct a final review of the 'Draft BRD' to verify accuracy, completeness, and consistency with GDPR compliance standards. 
+    Refine the BRD by incorporating clear user stories, acceptance criteria, and a risk management plan.
+  expected_output: >
+    An enhanced and finalized 'Business Requirements Document (BRD)' with:
+      1. Project Summary
+      2. Stakeholder Analysis
+      3. Detailed Functional and Non-Functional Requirements
+      4. User Stories with Acceptance Criteria
+      5. Risk Management Plan
+    This document should be well-structured, cohesive, and ready for the design and implementation stages.

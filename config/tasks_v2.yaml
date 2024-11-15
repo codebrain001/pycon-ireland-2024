@@ -1,0 +1,111 @@
+requirement_elicitation_gathering_task:
+  description: >
+    Thoroughly analyze initial inputs {inputs} to identify and extract key project requirements, objectives, and stakeholder needs.
+    Summarize critical insights to establish a comprehensive understanding of the project scope, ensuring all essential aspects are captured for subsequent phases.
+    Document the analysis in a structured format, adhering to industry best practices.
+  expected_output: >
+    A structured document titled 'Initial Requirement Elicitation Summary' containing:
+      1. Key Project Requirements
+        - A comprehensive outline of primary project requirements identified from the initial inputs, categorized by function or importance.
+      2. Project Objectives
+        - Clearly articulated project objectives, outlining the intended goals and expected outcomes.
+      3. Stakeholder Needs and Expectations
+        - An in-depth analysis of stakeholder requirements, expectations, specific concerns, and priorities.
+      4. Additional Context or Insights
+        - Any other relevant information that could impact project scope, such as preliminary constraints or assumptions.
+    This document will serve as a foundational reference for developing more detailed requirements, ensuring clarity and alignment across project stakeholders.
+
+brand_voice_review_task:
+  description: >
+    Analyze available information about the company, including mission, values, audience, and current messaging, to develop a cohesive brand voice. The goal is to capture a tone and style that align with the company’s identity and resonates with its target audience.
+  expected_output: >
+    A document titled 'Brand Voice Guidelines' containing:
+      1. Core Brand Attributes
+        - A summary of the company’s mission, values, and unique characteristics that should be reflected in its voice.
+      2. Target Audience Profile
+        - A profile detailing key demographic and psychographic information about the target audience, including preferences and communication expectations.
+      3. Tone and Style Guide
+        - Specific guidelines on tone, language style, and messaging approaches that align with the brand’s personality.
+      4. Sample Messaging
+        - Examples of how the brand voice can be applied across various platforms, such as social media, marketing materials, and customer communications.
+    This document will serve as a reference for creating consistent messaging that supports the company’s identity.
+
+data_analysis_task:
+  description: >
+    Perform a detailed data analysis on the provided in-house CSV data as part of the elicitation process. Analyze the data to identify trends, patterns, and any notable insights that could inform project requirements and scope.
+    Generate relevant charts to visualize key findings, enhancing the understanding of the data and supporting evidence-based decision-making.
+
+    Ensure that the visualization are saved as image files, and generate URLs for these
+    images so they can be easily embedded into the final report.
+  expected_output: >
+    A set of charts that visually represent the key metrics and trends observed
+    in the support data, ready to be serve as a supplemental reference for the requirement elicitation process.
+    Save the charts as image files in the `outputs/` directory.
+
+market_research_task:
+  description: >
+    Conduct a comprehensive market, technical, and competitive analysis informed by the 'Initial Requirement Elicitation Summary.' 
+    Gather and critically evaluate relevant industry reports, market data, and competitor information. 
+    Develop customer profiles and assess the project’s positioning, providing actionable insights to support strategic decisions.
+  expected_output: >
+    A document titled 'Comprehensive Market and Technical Analysis' that includes:
+      1. Market Analysis
+      2. Competitor Analysis
+      3. Technological Trends
+      4. Customer Segmentation and Personas
+      5. SWOT Analysis
+    This document should provide robust, data-driven insights to guide the project’s strategic direction.
+
+requirements_development_task:
+  description: >
+    Develop comprehensive functional and non-functional requirements based on insights from the 'Initial Requirement Elicitation Summary' and 'Comprehensive Market and Technical Analysis.' 
+    Ensure these requirements are well-structured, actionable, and prioritized for resource allocation.
+  expected_output: >
+    A 'Draft Business Requirements Document (BRD)' containing:
+      1. Functional Requirements
+      2. Non-Functional Requirements
+      3. Prioritized Requirements with Justifications
+    This document will provide a clear foundation for technical design and resource planning.
+
+compliance_assessment_task:
+  description: >
+    Assess the 'Draft BRD' to ensure compliance with GDPR and other relevant data protection standards. 
+    Perform a Data Protection Impact Assessment (DPIA) and create a compliance framework to guide the project through regulatory requirements.
+  expected_output: >
+    A 'GDPR Compliance Assessment Report' containing:
+      1. Compliance Analysis for the BRD
+      2. DPIA Report outlining potential data privacy risks and mitigation strategies
+      3. Compliance Framework for ongoing adherence
+    This report ensures that data privacy and regulatory standards are integrated into the project.
+
+quality_assurance_task:
+  description: >
+    Conduct a final review of the 'Draft BRD' to verify accuracy, completeness, and consistency with GDPR compliance standards. 
+    Refine the BRD by incorporating clear user stories, acceptance criteria, and a risk management plan.
+  expected_output: >
+    An enhanced and finalized 'Business Requirements Document (BRD)' with:
+      1. Project Summary
+      2. Stakeholder Analysis
+      3. In-house data analysis (Ensure the relevant visualization in images files created in `data_analysis_task` are included)
+      4. Detailed Functional and Non-Functional Requirements
+      5. User Stories with Acceptance Criteria
+      6. Risk Management Plan
+    This document should be well-structured, cohesive, and ready for the design and implementation stages.
+
+quality_assurance_task:
+  description: >
+    Conduct a final review of the 'Draft BRD' to verify accuracy, completeness, and consistency with GDPR compliance standards. 
+    Refine the BRD by incorporating clear user stories, acceptance criteria, and a risk management plan.
+    Ensure the in-house data analysis section clearly reflects the insights derived from the data analysis task, including the visualizations produced.
+  expected_output: >
+    An enhanced and finalized 'Business Requirements Document (BRD)' with:
+      1. Project Summary
+      2. Stakeholder Analysis
+      3. In-house Data Analysis
+        - A detailed section on the data analysis, including key metrics, trends, and insights derived from the data.
+        - Ensure the relevant visualizations (charts, graphs, etc.) created during the `data_analysis_task` are included as image files in the markdown report correctly.
+        - Note the filenames of the images produced in the `data_analysis_task` (e.g., `outputs/analysis_chart_1.png`, `outputs/trend_analysis_2.png`) and include these filenames with outputs/ prefix as references within the document.
+      4. Detailed Functional and Non-Functional Requirements
+      5. User Stories with Acceptance Criteria
+      6. Risk Management Plan
+    This document should be well-structured, cohesive, and ready for the design and implementation stages.
