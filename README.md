@@ -10,12 +10,12 @@ Clone the repository to a directory of your choosing:
 
 - HTTPS:
 ```
-git clone https://github.com/codebrain001/pycon-2024.git
+git clone https://github.com/codebrain001/pycon-ireland-2024.git
 ```
 
 - SSH:
 ```
-git clone git@github.com:codebrain001/pycon-2024.git
+git clone git@github.com:codebrain001/pycon-ireland-2024.git
 ```
 
 - GitHub CLI:
